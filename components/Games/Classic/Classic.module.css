@@ -1,0 +1,13 @@
+.classic {
+    transition: transform 2s;
+    transform-style: preserve-3d; 
+    margin-left: 20px;  
+}
+
+.classic > div {
+  backface-visibility: hidden;
+}
+
+.reverse {
+    transform: rotateX(180deg);
+}

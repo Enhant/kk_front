@@ -1,0 +1,25 @@
+.card-list-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    height: 558px;
+    padding: 30px 15px;
+}
+
+.Mines-game-wrapper {
+    background-color: #551C8B;
+    border-radius: 5px;
+}
+
+@media(max-width: 600px) {
+    body .card-list-wrapper {
+        height: 280px;
+    }
+}
+
+@media(max-width: 1280px) {
+    .card-list-wrapper {
+        height: 388px;
+    }
+}

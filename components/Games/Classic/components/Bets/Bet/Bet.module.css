@@ -1,0 +1,11 @@
+.bet {
+    min-height: 100%;
+    margin-left: 10px;
+    transition: all .3s;
+	box-shadow: 4px 5px 5px lightblue;
+	border-radius: 4px;
+	padding: 5px;
+    position: relative;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}

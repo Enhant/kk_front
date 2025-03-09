@@ -1,0 +1,30 @@
+.header-minescards-wrapper {
+    max-width: 236px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    border: 1px solid #1EFFFF;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.diamonds,
+.bombs {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0;
+
+}
+
+.bombs img, .diamonds img {
+    margin-right: 10px;
+}
+
+.diamonds {
+    border-right: 1px solid #1EFFFF;
+}
