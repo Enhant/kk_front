@@ -18,6 +18,7 @@ const useStyles = makeStyles({
   },
 });
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const SliderMenuElem: React.FC<{ name: string; icon: any; path: string }> = ({
   name,
   icon,
