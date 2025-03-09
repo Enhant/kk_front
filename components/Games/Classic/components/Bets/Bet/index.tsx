@@ -28,12 +28,12 @@ const Bet : React.FC<IProps> = ({width, name, value}) => {
                 })})`}}
             container
             direction="column"
-            justify="space-between"
+            justifyContent="space-between"
         >
             <Grid container direction="row">
-                <Grid item container direction="column" className={classes.betData}>
-                  <Grid item className={classes.betName}>{name}</Grid>
-                  <Grid item className={classes.betValue}>{value}<img src={Gem} alt="gem" style={{ width: 12 }}/></Grid>
+                <Grid  container direction="column" className={classes.betData}>
+                  <Grid  className={classes.betName}>{name}</Grid>
+                  <Grid  className={classes.betValue}>{value}<img src={Gem} alt="gem" style={{ width: 12 }}/></Grid>
 
                 </Grid>
             </Grid> 

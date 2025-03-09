@@ -20,15 +20,15 @@ const GameInfo: React.FC<IProps> = ({time, data, status, setStatus}) => {
 
     return (
         <>
-            <Grid container justify="space-between" alignItems="center">
-                <Grid item container 
-                    justify="space-between" 
+            <Grid container justifyContent="space-between" alignItems="center">
+                <Grid  container 
+                    justifyContent="space-between" 
                     className={classes.gain} 
-                    md={6} xs={12}
+
                     alignItems="center"
                 >
-                    <Grid item>Выигрыш</Grid> 
-                    <Grid item>{data.win}<img src={gemIcon}/></Grid> 
+                    <Grid >Выигрыш</Grid> 
+                    <Grid >{data.win}<img src={gemIcon}/></Grid> 
                 </Grid>                
             </Grid>
 

@@ -1,6 +1,4 @@
 import React from 'react';
-import diamond from './images/diamond-forheader.png';
-import bomb from './images/bomb-forHeader.png';
 import classes from './MinesCardHeader.module.css';
 
 interface IProps {
@@ -12,11 +10,11 @@ const MinesCardHeader: React.FC<IProps> = ({ cardsCount, minesCount }) => {
 	return (
 		<div className={classes['header-minescards-wrapper']}>
 			<div className={classes.diamonds}>
-				<img src={diamond} alt="" />
+				<img src={'url(/kk_frontend/images/diamond-forheader.png)'} alt="" />
 				<span>{cardsCount - minesCount}</span>
 			</div>
 			<div className={classes.bombs}>
-				<img src={bomb} alt="" />
+				<img src={'url(/kk_frontend/images/bomb-forHeader.png)'} alt="" />
 				<span>{minesCount}</span>
 			</div>
 		</div>

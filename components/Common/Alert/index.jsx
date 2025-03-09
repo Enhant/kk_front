@@ -19,7 +19,7 @@ const getAlertText = (status, timeUntilStart) => {
   }
 }
 
-const Alert = ({ timeUntilStart, status }) => {
+const Alert = ({ timeUntilStart, status = '' }) => {
     const classes = useStyles();
 
     let alertText = getAlertText(status, timeUntilStart);

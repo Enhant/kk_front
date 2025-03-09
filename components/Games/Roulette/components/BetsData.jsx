@@ -24,15 +24,15 @@ const Bet = ({data, color="red" }) => {
     const classes = useStyles({ color });
   
     return (
-        <Grid item container className={classes.bet} xs={12} md={4} direction="column">
-            <Grid className={ classes.headerData } container justify="space-between">
-                <Grid item>Ставка</Grid> <Grid item>{Object.values(data).reduce( (acc, curr) => acc+=curr, 0 )}</Grid>
+        <Grid  container className={classes.bet} direction="column">
+            <Grid className={ classes.headerData } container justifyContent="space-between">
+                <Grid >Ставка</Grid> <Grid >{Object.values(data).reduce( (acc, curr) => acc+=curr, 0 )}</Grid>
             </Grid>
             <Grid className={classes.dataList} container direction="column">
                 {Object.entries(data).map( ([username, bet]) => (
                     <Grid 
                         container 
-                        justify="space-between" 
+                        justifyContent="space-between" 
                         className={classes.dataListElem} 
                         key={username}
                     >

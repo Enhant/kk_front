@@ -1,5 +1,3 @@
-import Grid from '@mui/material/Grid2';
-
 import { makeStyles } from '@mui/styles';
 
 import UnregisterComponent from './LoginComponent/Desktop/UnregisteredVersion';
@@ -8,6 +6,7 @@ import RegisteredComponent from './LoginComponent/Desktop/RegisteredVersion';
 import Link from 'next/link';
 
 import header from '../../assets/images/header.svg';
+import { Grid2 } from '@mui/material';
 
 
 interface IProps {
@@ -19,27 +18,27 @@ const HeaderDesktop: React.FC<IProps> = ({ headerOptions, isAuthorized }) => {
     const classes = useStyles();
 
     return (
-        <Grid className={classes.header} component={"header"} container justify="space-between">
-            <Grid item container xs={6}>
-                <Grid item xs={2} className={classes.headerContainer}>
+        <Grid2 className={classes.header} component={"header"} container justifyContent="space-between">
+            <Grid2>
+                <Grid2 className={classes.headerContainer}>
                     <img src={header} className={classes.headerIcon}/>
-                </Grid>
+                </Grid2>
 
-                <Grid container item justify="space-between" xs={8}>
+                <Grid2 container justifyContent="space-between">
                     {
                         headerOptions.map( option => (
-                            <Grid className={classes.link} item key={option.name}>
+                            <Grid2 className={classes.link} key={option.name}>
                                 <Link href={option.path}>{option.name}</Link>
-                            </Grid>
+                            </Grid2>
                         ))
                     }
-                </Grid>
-            </Grid>
+                </Grid2>
+            </Grid2>
 
-            <Grid 
-                item 
+            <Grid2 
+                 
                 container 
-                xs={6} 
+ 
                 direction="row-reverse"
                 alignItems="center"
             >
@@ -47,8 +46,8 @@ const HeaderDesktop: React.FC<IProps> = ({ headerOptions, isAuthorized }) => {
                     <RegisteredComponent /> :
                     <UnregisterComponent/>
                 }
-            </Grid>
-        </Grid>
+            </Grid2>
+        </Grid2>
     )
 };
 

@@ -1,10 +1,11 @@
+/* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable @next/next/no-img-element */
 import { makeStyles } from '@mui/styles';
 
 import Grid from '@mui/material/Grid';
 
 import theme from '../../../utils/theme';
 
-import test_pudge from './test_pudge.jpg'
 import gem from '../../../assets/icons/gem.svg'
 
 const imageSize = 35;
@@ -71,13 +72,13 @@ const HistoryElem: React.FC<{gain: number, chance: string, name: string}> = ({ g
     const classes = useStyles();
 
     return (
-        <Grid item container className={classes.row} xs={12} md={6}>
-            <Grid item className={classes.img} xs={2}>
-                <img src={test_pudge}/>
+        <Grid  container className={classes.row}>
+            <Grid  className={classes.img}>
+                <img src={'url(/kk_frontend/images/test_pudge.jpg)'}/>
             </Grid>
-            <Grid item className={classes.name} xs={4}>{name}</Grid>
-            <Grid item className={classes.gain} xs={3}>{gain} <img src={gem}/></Grid>
-            <Grid item className={classes.chance} xs={3}>{chance}</Grid>
+            <Grid  className={classes.name}>{name}</Grid>
+            <Grid  className={classes.gain}>{gain} <img src={gem}/></Grid>
+            <Grid  className={classes.chance}>{chance}</Grid>
         </Grid>
     );
 }

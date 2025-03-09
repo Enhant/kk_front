@@ -6,11 +6,11 @@ const Rules = () => {
     const classes = useStyles();
     return (
         <Grid container className={classes.container}>
-            <Grid item xs={12} className={classes.head}>
+            <Grid className={classes.head}>
                 Правила
             </Grid>
             { rules.map( (rule, index) => (
-                <Grid item xs={12} key={index} className={classes.rule}>
+                <Grid key={index} className={classes.rule}>
                     {rule}
                 </Grid>
             ))}            

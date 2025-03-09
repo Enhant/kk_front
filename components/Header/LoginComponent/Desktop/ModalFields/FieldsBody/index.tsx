@@ -23,10 +23,10 @@ const FieldsBody: React.FC<IProps> = ({label}) => {
 
     return (
         <Grid container className={classes.container}>
-            <Grid item xs={12} className={classes.head}>
+            <Grid className={classes.head}>
                 {label}
             </Grid>
-            <Grid item xs={12}>
+            <Grid>
                 <TextInput 
                     label="Email" 
                     additionalClass={classes.textInput}
@@ -41,7 +41,7 @@ const FieldsBody: React.FC<IProps> = ({label}) => {
                     type="password"    
                 />
             </Grid>
-            <Grid item xs={12}>
+            <Grid>
                 <ButtonInput 
                     label="Войти" 
                     additionalClass={classes.button}

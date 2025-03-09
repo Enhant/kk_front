@@ -21,10 +21,10 @@ const ModalFieldsBody: React.FC<IProps> = React.forwardRef(({label}) => {
 
     return (
         <Grid container className={classes.body}>
-            <Grid xs={6} item>
+            <Grid >
                 <FieldsBody label={label}/>
             </Grid>
-            <Grid xs={6} item>
+            <Grid >
                 <Rules/>
             </Grid>
         </Grid>

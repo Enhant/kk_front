@@ -3,7 +3,7 @@ import theme from '../../../utils/theme';
 import TextField from '@mui/material/TextField';
 
 
-const TextInput = ({ label = '', additionalClass, value, onChange, type = '', name = '' }) => {
+const TextInput = ({ label = '', additionalClass = '', value = '', onChange, type = '', name = '' }) => {
     const classes = useStyles();
 
     return (

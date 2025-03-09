@@ -101,15 +101,15 @@ function Roulette() {
         <Grid 
           container
           direction="row" 
-          justify="center"
+          justifyContent="center"
           alignItems="flex-start"
           spacing={2}
         >
           <Grid
-            item
+            
             container
-            xs={12}
-            md={6}
+
+
             className={`
               ${RouletteStyles.wheel}
               ${RouletteStyles.spin}
@@ -117,13 +117,13 @@ function Roulette() {
             `}
             alignItems="center"
           >
-              <Grid item className={RouletteStyles.arrow}></Grid>
-              <Grid item container justify="center">
+              <Grid  className={RouletteStyles.arrow}></Grid>
+              <Grid  container justifyContent="center">
                 <img src="https://i.imgur.com/N01W3Ks.png" style={{ "transform": `rotate(${trasnformWheel}deg)` }}/>
               </Grid>
           </Grid>
 
-          <Grid item xs={12} md={6} container justify="center" className={classes.betPanel}>
+          <Grid container justifyContent="center" className={classes.betPanel}>
             <BetPanel 
               handleBetEmit={handleBetEmit}
             />

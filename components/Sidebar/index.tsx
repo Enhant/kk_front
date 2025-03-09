@@ -22,14 +22,14 @@ const Slidebar: React.FC<{ mobile?: boolean }> = ({mobile}) => {
     const classes = useStyles({mobile});
     return (
         <Grid 
-            justify="center"
+            justifyContent="center"
             alignItems="center" 
             direction="column" 
             container
             className={classes.sidebar} 
         >
             { routes.map( route => (
-                <Grid className={Styles.link} item key={route.name}>
+                <Grid className={Styles.link}  key={route.name}>
                     <MenuElem icon={route.icon} name={route.name} path={route.path}/>
                 </Grid>
             ) ) }

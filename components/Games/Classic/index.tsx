@@ -70,8 +70,8 @@ function Classic({ data, makeBet }: IProps) {
     }, [timeToStart, currentGameInfo.players]);
 
     return (
-      <Grid container justify="space-between">
-        <Grid item md={12} lg={5} className={classes.betPanel}>
+      <Grid container justifyContent="space-between">
+        <Grid className={classes.betPanel}>
           <BetPanel
             betLevel={betLevel}
             onChangeBetLevel={handleChangeBetLevel}
@@ -83,7 +83,7 @@ function Classic({ data, makeBet }: IProps) {
           />
         </Grid>
 
-        <Grid item className={classes.game} md={12} lg={6}> 
+        <Grid  className={classes.game}> 
           <GameInfo 
             data={currentGameInfo}
             time={timeToStart}
@@ -94,13 +94,13 @@ function Classic({ data, makeBet }: IProps) {
         </Grid>
 
         <Grid
-          item md={12} lg={7}
+
           className={classes.historyContainer}
         > 
           <History history={mockHistory}/>
         </Grid>
 
-        <Alert timeUntilStart={timeToStart} />
+        <Alert timeUntilStart={timeToStart} status={undefined} />
       </Grid>
     )
 }

@@ -1,6 +1,7 @@
-import { Grid, IconButton, InputBase, makeStyles } from '@mui/material';
+import { Grid, IconButton, InputBase } from '@mui/material';
 import { ChangeEvent, Dispatch, SetStateAction } from 'react';
 import { ICards } from '..';
+import { makeStyles } from '@mui/styles';
 
 type TProps = {
 	minesCount: number;

@@ -20,10 +20,10 @@ const EnterMoneyModal = forwardRef(() => {
 
     return (
         <Grid className={classes.modalContainer} container>
-            <Grid className={classes.header} item xs={12}>
+            <Grid className={classes.header}>
                 Пополнить
             </Grid>
-            <Grid item className={classes.body}>
+            <Grid  className={classes.body}>
                 <TextInput
                     label="Сколько?"
                     additionalClass={classes.textInput}

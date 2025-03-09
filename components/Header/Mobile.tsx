@@ -54,7 +54,7 @@ const HeaderMobile: React.FC<IProps> = ({ headerOptions, isAuthorized }) => {
                     ) : ''}
                     {
                         headerOptions.map( option => (
-                            <Grid className={classes.link} item key={option.name}>
+                            <Grid className={classes.link}  key={option.name}>
                                 <Link href={option.path}>{option.name}</Link>
                             </Grid>
                         ))

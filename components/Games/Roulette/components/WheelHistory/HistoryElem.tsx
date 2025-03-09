@@ -25,7 +25,7 @@ const useStyles = makeStyles<null, IStylesProp>({
 const HistoryElem: React.FC<IStylesProp> = ({ backgroundColor, color, value }) => {
     const classes = useStyles({ backgroundColor, color });
     return (
-        <Grid item className={classes.elem}>
+        <Grid  className={classes.elem}>
             {value}
         </Grid>
     )

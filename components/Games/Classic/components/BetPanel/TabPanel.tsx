@@ -41,7 +41,7 @@ const BetTabPanel: React.FC<IProps> = ({value, bet, chance, ticketPrice, makeBet
                 <Grid
                     container
                     direction="column"
-                    justify="space-around"
+                    justifyContent="space-around"
                     alignItems="center"
                     className={classes.gamerColorInfo}
                 >
@@ -54,11 +54,11 @@ const BetTabPanel: React.FC<IProps> = ({value, bet, chance, ticketPrice, makeBet
 
                     <Grid 
                         container
-                        item
-                        justify="space-around"
+                        
+                        justifyContent="space-around"
                         alignItems="center"
                     >
-                        <Grid item>
+                        <Grid >
                             { hasPlayerInGame ? (
                                 <>
                                     <Grid>Ваш цвет:</Grid> 
@@ -68,7 +68,7 @@ const BetTabPanel: React.FC<IProps> = ({value, bet, chance, ticketPrice, makeBet
                                 `Вы не участвуете в этой игре`
                             )}
                         </Grid>
-                        <Grid item>
+                        <Grid >
                             { hasPlayerInGame ? (
                                 <>
                                     <Grid>Победитель:</Grid> 
@@ -83,11 +83,11 @@ const BetTabPanel: React.FC<IProps> = ({value, bet, chance, ticketPrice, makeBet
             )}
             <Grid className={classes.betPanel}>
                 <Grid container className={classes.myBet}>
-                    <Grid item className={undefined}>
+                    <Grid  className={undefined}>
                         <Grid>Моя ставка</Grid>
                         <Grid className={classes.betNumber}>{bet} <img src={gemIcon}/></Grid>
                     </Grid>
-                    <Grid item className={undefined}>
+                    <Grid  className={undefined}>
                         <Grid>Шанс на победу</Grid>
                         <Grid className={classes.betNumber}>{chance}%</Grid>
                     </Grid>

@@ -1,8 +1,8 @@
 import Modal from '@mui/material/Modal';
 import Grid from '@mui/material/Grid';
-import TextInput from '../Common/TextInput';
-import ButtonInput from '../Common/ButtonInput';
-import Rules from '../Common/Rules';
+import TextInput from 'common/TextInput';
+import ButtonInput from 'common/ButtonInput';
+import Rules from 'common/Rules';
 import { makeStyles } from '@mui/styles';
 
 const useStyles = makeStyles({
@@ -40,14 +40,14 @@ const RegisterModal: React.FC<{ open: boolean, handleModalClose: () => void }> =
                 <Grid 
                     className={classes.modal} 
                     container 
-                    justify="center"
+                    justifyContent="center"
                     alignItems="flex-start"
                 >
                     <div className={ classes.modalHeader }>Логин</div>
-                    <TextInput label="Имя пользователя"/>
-                    <TextInput label="Пароль" />
-                    <TextInput label="Повторить пароль"/>
-                    <ButtonInput label="Зарегистрироваться"/>
+                    <TextInput label="Имя пользователя" onChange={undefined}/>
+                    <TextInput label="Пароль" onChange={undefined} />
+                    <TextInput label="Повторить пароль" onChange={undefined}/>
+                    <ButtonInput label="Зарегистрироваться" onClick={undefined}/>
                     <Rules/>
                 </Grid>
             </Modal>

@@ -17,13 +17,13 @@ const RegisterLoginComponent = () => {
             alignItems="center"
             alignContent="flex-start"
         >
-            <Grid item>
+            <Grid >
                 <Grid className={classes.logo}/>
             </Grid>
-            <Grid item className={classes.userName}>Админ</Grid>
+            <Grid  className={classes.userName}>Админ</Grid>
             
-            <Grid item className={classes.balance}>0 <img src={gemIcon}/></Grid>
-            <Grid item className={classes.topUpBalance}>
+            <Grid  className={classes.balance}>0 <img src={gemIcon}/></Grid>
+            <Grid  className={classes.topUpBalance}>
                 <Link href="/">Пополнить баланс</Link>
             </Grid>
         </Grid>

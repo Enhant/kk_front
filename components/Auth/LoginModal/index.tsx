@@ -1,9 +1,9 @@
 import Modal from '@mui/material/Modal';
-import Grid from '@mui/material/Grid';
 import TextInput from '../../Common/TextInput';
 import ButtonInput from '../../Common/ButtonInput';
 import Rules from '../../Common/Rules';
 import { makeStyles } from '@mui/styles';
+import { Grid2 } from '@mui/material';
 
 const useStyles = makeStyles({
     modal: {
@@ -37,18 +37,18 @@ const LoginModal: React.FC<{ open: boolean, handleModalClose: () => void }> = ({
                 aria-labelledby="login-modal"
                 aria-describedby="login-modal-description"
             >
-                <Grid 
+                <Grid2
                     className={classes.modal} 
                     container 
-                    justify="center"
+                    justifyContent="center"
                     alignItems="flex-start"
                 >
                     <div className={ classes.modalHeader }>Логин</div>
-                    <TextInput label="Имя пользователя"/>
-                    <TextInput label="Пароль" />
-                    <ButtonInput label="Зайти"/>
+                    <TextInput onChange={undefined} label="Имя пользователя"/>
+                    <TextInput onChange={undefined} label="Пароль" />
+                    <ButtonInput label="Зайти" onClick={undefined}/>
                     <Rules/>
-                </Grid>
+                </Grid2>
             </Modal>
     );
 }

@@ -2,7 +2,7 @@ import {makeStyles} from '@mui/styles';
 import theme from '../../../utils/theme';
 import Button from '@mui/material/Button';
 
-const ButtonInput = ({ label, additionalClass, onClick, type = '' }) => {
+const ButtonInput = ({ label = '', additionalClass = '', onClick, type = '' }) => {
     const classes = useStyles();
     return (
         <Button

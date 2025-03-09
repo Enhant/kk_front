@@ -43,35 +43,35 @@ const AuthModuleBody = forwardRef(() => {
         <Grid
             container
             direction="column"
-            item
-            xs={12}
-            md={6}
+            
+
+
             className={cn(classes.selectAuthItem)}
             alignItems="center"
         >
-            <Grid item className={classes.header}>
+            <Grid  className={classes.header}>
                 У Меня есть аккаунт
             </Grid>
             <Grid
-                item container justify="center"
+                 container justifyContent="center"
                 className={classes.form}
                 component="form"
                 onSubmit={handleLogin}
             >
-                <Grid item className={classes.inputContainer}>
+                <Grid  className={classes.inputContainer}>
                     <TextInput
                         label="Email"
                         additionalClass={classes.input}
                         name="email"
                     />
                 </Grid>
-                <Grid item className={classes.inputContainer}>
+                <Grid  className={classes.inputContainer}>
                     <TextInput
                         label="Пароль" type="password"
                         additionalClass={classes.input} name="password"
                     />
                 </Grid>
-                <Grid item>
+                <Grid >
                     <ButtonInput type="submit" label="Войти" additionalClass={classes.button}/>
                 </Grid>
             </Grid>
@@ -128,30 +128,30 @@ const AuthModuleBody = forwardRef(() => {
             <Grid
                 container
                 direction="column"
-                item
-                xs={12}
-                md={6}
+                
+
+
                 className={cn(classes.selectAuthItem)}
                 alignItems="center"
             >
-                <Grid item className={classes.header}>
+                <Grid  className={classes.header}>
                     Я здесь впервые
                 </Grid>
                 <Grid 
-                    item container 
-                    justify="center"
+                     container 
+                    justifyContent="center"
                     className={classes.form}
                     component="form"
                     onSubmit={handleRegister}
                 >
-                    <Grid item className={classes.inputContainer}>
+                    <Grid  className={classes.inputContainer}>
                         <TextInput label="Email" additionalClass={classes.input} name="email"/>
                     </Grid>
-                    <Grid item className={classes.inputContainer}>
+                    <Grid  className={classes.inputContainer}>
                         <TextInput label="Логин" additionalClass={classes.input} name="login"/>
                     </Grid>
-                    <Grid container item spacing={2}>
-                        <Grid item xs={6} className={classes.inputContainer}>
+                    <Grid container  spacing={2}>
+                        <Grid className={classes.inputContainer}>
                             <TextInput
                                 label="Пароль"
                                 type="password"
@@ -159,7 +159,7 @@ const AuthModuleBody = forwardRef(() => {
                                 name="password"
                             />
                         </Grid>
-                        <Grid item xs={6} className={classes.inputContainer}>
+                        <Grid className={classes.inputContainer}>
                             <TextInput
                                 label="Повтори пароль"
                                 type="password"
@@ -168,7 +168,7 @@ const AuthModuleBody = forwardRef(() => {
                             />
                         </Grid>
                     </Grid>
-                    <Grid item>
+                    <Grid >
                         <ButtonInput type="submit" label="Регистрация" additionalClass={classes.button}/>
                     </Grid>
                 </Grid>
@@ -195,8 +195,8 @@ const AuthModuleBody = forwardRef(() => {
     }
 
     return (
-        <Grid container justify="center" alignItems="center" onClick={(e) => e.stopPropagation()}>
-            <Grid container item className={classes.container}>
+        <Grid container justifyContent="center" alignItems="center" onClick={(e) => e.stopPropagation()}>
+            <Grid container  className={classes.container}>
                 {renderLoginPart()}
                 {renderRegisterPart()}
                 {renderSnackBar()}

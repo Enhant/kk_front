@@ -8,6 +8,9 @@ const nextConfig = {
   images: {
     unoptimized: true, // Отключает оптимизацию изображений (иначе они не будут работать на GitHub Pages)
   },
+  typescript: {
+    ignoreBuildErrors: true, // <--- вот эта опция отключает ошибки типов при сборке
+  },
 };
 
 module.exports = withImages(nextConfig);

@@ -48,7 +48,7 @@ const RegisterLoginComponent = () => {
             alignItems="center"
             className={classes.container}
         >
-            <Grid item onClick={handleClick}>
+            <Grid  onClick={handleClick}>
                 <Grid className={classes.userName} style={{ color: rnc({
                     seed: name,
                     luminosity: 'dark'

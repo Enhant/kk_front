@@ -26,13 +26,13 @@ const BetTabPanel: React.FC<IProps> = ({
 	return (
 		<Grid className={classes.betPanel}>
 			<Grid className={classes.bet} container direction="column">
-				<Grid item className={classes.betLabel}>
+				<Grid  className={classes.betLabel}>
 					ставка
 				</Grid>
-				<Grid item>
+				<Grid >
 					<BetInput bet={bet} setBet={setBet} isGameStarted={isGameStarted} />
 				</Grid>
-				<Grid item className={classes.betLabel}>
+				<Grid  className={classes.betLabel}>
 					Число бомб
 				</Grid>
 				<ControlButtons

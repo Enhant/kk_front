@@ -33,7 +33,7 @@ const BetPanel = ({ handleBetEmit }) => {
     }, [email, name, handleBetEmit, bet]);
 
     return (
-        <Grid className={ classes.panel } item>
+        <Grid className={ classes.panel } >
             <ButtonGroup className={classes.group} color="primary" aria-label="outlined primary button group">
                 <Button onClick={ () => setBet(1) }>Min</Button>
                 <Button onClick={ () => setBet(Number(bet)*2) }>x2</Button>
@@ -47,8 +47,8 @@ const BetPanel = ({ handleBetEmit }) => {
             />
             <Grid>
                 <Grid className={classes.betHeader}>Поставить</Grid>
-                <Grid container justify="space-between" spacing={1}>
-                    <Grid item sm={12} md={4}>
+                <Grid container justifyContent="space-between" spacing={1}>
+                    <Grid>
                         <Button 
                             className={clsx(classes.redBet, classes.bet)}
                             onClick={handleBet(redBet, setRedBet, 'red')}
@@ -57,7 +57,7 @@ const BetPanel = ({ handleBetEmit }) => {
                             <Grid className={classes.coefficient}>x2</Grid>    
                         </Button>
                     </Grid>
-                    <Grid item sm={12} md={4}>
+                    <Grid>
                         <Button 
                             className={clsx(classes.greenBet, classes.bet)} 
                             onClick={handleBet(greenBet, setGreenBet, 'blue')}
@@ -66,7 +66,7 @@ const BetPanel = ({ handleBetEmit }) => {
                             <Grid className={classes.coefficient}>x14</Grid>
                         </Button>
                     </Grid>
-                    <Grid item sm={12} md={4}>
+                    <Grid>
                         <Button 
                             className={clsx(classes.blackBet, classes.bet)}
                             onClick={handleBet(blackBet, setBlackBet, 'black')}
