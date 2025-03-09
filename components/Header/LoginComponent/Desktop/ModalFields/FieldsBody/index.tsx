@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 import Grid from '@mui/material/Grid';
-import {makeStyles} from '@mui/material/styles';
+import {makeStyles} from '@mui/styles';
 import TextInput from 'components/Common/TextInput';
 import ButtonInput from 'components/Common/ButtonInput';
 

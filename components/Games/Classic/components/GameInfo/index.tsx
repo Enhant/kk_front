@@ -6,6 +6,8 @@ import Bets from '../Bets';
 import { IClassicGameData, TGameModes } from 'types';
 import { statuses } from '../../namespace';
 
+import gemIcon from '@icons/gem.svg';
+
 interface IProps {
     data: IClassicGameData["gameData"];
     time: number;
@@ -14,7 +16,6 @@ interface IProps {
     setStatus: () => void;
 }
 const GameInfo: React.FC<IProps> = ({time, data, status, setStatus}) => {
-    const gemIcon = require('@icons/gem.svg');
     const classes = useStyles();
 
     return (

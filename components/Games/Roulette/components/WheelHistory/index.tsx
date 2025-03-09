@@ -1,5 +1,5 @@
 import HistoryElem from './HistoryElem';
-import { makeStyles } from '@mui/material/styles';
+import { makeStyles } from '@mui/styles';
 import Grid from '@mui/material/Grid';
 
 

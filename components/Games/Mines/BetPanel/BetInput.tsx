@@ -1,8 +1,9 @@
-import { makeStyles } from '@mui/material/styles';
+import { makeStyles } from '@mui/styles';
 import Paper from '@mui/material/Paper';
 import InputBase from '@mui/material/InputBase';
 import IconButton from '@mui/material/IconButton';
 import { ChangeEvent } from 'react';
+import gemIcon from '@assets/icons/gem.svg';
 
 
 type Props = {
@@ -41,7 +42,7 @@ function CustomizedInputBase({
 	return (
 		<Paper component="form" className={classes.root}>
 			<IconButton className={classes.iconButton} aria-label="menu">
-				<img src={require('@assets/icons/gem.svg')} />
+				<img src={gemIcon} />
 			</IconButton>
 			<InputBase
 				disabled={isGameStarted}

@@ -1,6 +1,6 @@
-import { createMuiTheme } from '@mui/material';
+import { createTheme } from "@mui/material";
 
-const theme = createMuiTheme({
+const theme = createTheme({
   palette: {
     common: { black: '#000', white: '#fff' },
     background: { paper: 'rgb(58, 0, 136)', default: '#240055' },
@@ -24,7 +24,6 @@ const theme = createMuiTheme({
       primary: '#343434',
       secondary: 'rgba(0, 0, 0, 1)',
       disabled: 'rgba(0, 0, 0, 0.38)',
-      hint: 'rgba(0, 0, 0, 0.38)',
     }
   },
 });

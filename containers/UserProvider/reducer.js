@@ -1,7 +1,5 @@
-import produce from 'immer';
+import {produce} from 'immer';
 import { USER_ACTIONS } from './constants';
-
-import {IAction} from 'types';
 
 let userFromLocalStorage;
 

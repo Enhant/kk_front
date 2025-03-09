@@ -14,6 +14,7 @@ import { statuses } from '../../namespace';
 
 import { makeSelectUser } from 'UserProvider/selectors';
 import { getWinnerName, getGameModeRestartTimers } from 'containers/classic/selectors';
+import gemIcon from '@icons/gem.svg';
 
 import Circle from 'common/ColoredCircle';
 
@@ -29,7 +30,6 @@ interface IProps {
 }
 
 const BetTabPanel: React.FC<IProps> = ({value, bet, chance, ticketPrice, makeBet, status, hasPlayerInGame}) => {
-    const gemIcon = require('@icons/gem.svg');
     const classes = useStyles();
     const {name} = useSelector(makeSelectUser);
     const winnerName = useSelector( getWinnerName );

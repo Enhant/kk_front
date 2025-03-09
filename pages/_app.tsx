@@ -11,15 +11,14 @@ import type { AppProps } from 'next/app';
 
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { makeStyles } from '@mui/styles';
-import { ThemeProvider } from '@mui/material/styles';
+import { ThemeProvider } from '@mui/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 
 import { wrapper } from '../Redux/configureStore';
 
-
 const useStyles = makeStyles({
   container: {
-    background: `url(${require('../assets/images/bg.jpg')})`,
+    background: "url(/kk_frontend/images/bg.jpg)",
     'box-sizing': 'border-box',
     fontFamily: 'sans-serif',
     backgroundSize: 'cover',
@@ -42,7 +41,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Head>
         <title>KeyKazino</title>
         <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
-        <link rel="shortcut icon" href={require('../styles/icon1.ico')} type="image/png" />
+        <link rel="shortcut icon" href={'url(/kk_frontend/images/icon1.ico'} type="image/png" />
       </Head>
       <ThemeProvider theme={theme}>
         <CssBaseline />

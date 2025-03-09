@@ -5,6 +5,7 @@ import { makeStyles } from '@mui/styles';
 import theme from '../../../../../../utils/theme';
 
 import Grid from '@mui/material/Grid';
+import Gem from '@icons/gem.svg';
 
 interface IProps {
     name: string
@@ -14,7 +15,6 @@ interface IProps {
 }
 
 const Bet : React.FC<IProps> = ({width, name, value}) => {
-    const Gem = require('@icons/gem.svg');
     const classes = useStyles();
     const percent = `${width.toFixed(0)}%`;
     return (

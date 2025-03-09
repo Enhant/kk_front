@@ -5,10 +5,10 @@ import { makeStyles } from '@mui/styles';
 
 
 import Link from 'next/link'
+import gemIcon from '@assets/icons/gem.svg';
 
 
 const RegisterLoginComponent = () => {
-    const gemIcon = require('@assets/icons/gem.svg');
     const classes = useStyles();
     return (
         <Grid 
@@ -35,7 +35,7 @@ const useStyles = makeStyles({
         width: 50,
         height: 50,
         borderRadius: 50,
-        background: `url(${require('../../../../assets/images/test_pudge.jpg')})`,
+        background: `url(/kk_frontend/images/test_pudge.jpg)`,
         backgroundSize: 'cover',
         marginTop: 10,
     },

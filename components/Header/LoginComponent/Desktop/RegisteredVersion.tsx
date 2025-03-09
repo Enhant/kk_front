@@ -15,10 +15,9 @@ import { logout } from 'UserProvider/actions';
 import EnterModal from '../../Modals/Enter';
 import WidthdrawModal from '../../Modals/Widthdraw';
 import rnc from 'randomcolor';
-
+import gemIcon from '@icons/gem.svg';
 
 const RegisterLoginComponent = () => {
-    const gemIcon = require('@icons/gem.svg');
     const [ isOpenEnterModal, setIsOpenEnterModal ] = useState(false);
     const [ isWidthdrawModal, setIsWithdrawModal ] = useState(false);
     const classes = useStyles();
@@ -91,12 +90,13 @@ const RegisterLoginComponent = () => {
     );
 }
 
+
 const useStyles = makeStyles({
     logo: {
         width: 50,
         height: 50,
         borderRadius: 50,
-        background: `url(${require('../../../../assets/images/test_pudge.jpg')})`,
+        background: `url(/kk_frontend/images/test_pudge.jpg)`,
         backgroundSize: 'cover',
     },
     balance: {

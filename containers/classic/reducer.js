@@ -1,4 +1,4 @@
-import produce from 'immer';
+import {produce } from 'immer';
 import CLASSIC_ACTIONS from './constants';
 
 const getInitialData = (ticketPrice) => ({

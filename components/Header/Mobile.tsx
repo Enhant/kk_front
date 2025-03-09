@@ -16,6 +16,7 @@ import RegisteredVersion from './LoginComponent/Mobile/RegisteredVersion';
 
 import Slidebar from '../Sidebar';
 
+import header from '../../assets/images/header.svg';
 
 interface IProps {
     headerOptions: Array<{path: string, name: string}>;
@@ -37,7 +38,7 @@ const HeaderMobile: React.FC<IProps> = ({ headerOptions, isAuthorized }) => {
             </Toolbar>
 
             <Grid className={classes.headerContainer}>
-                <img src={require('../../assets/images/header.svg')}/>
+                <img src={header}/>
             </Grid>
 
             <Drawer open={menuState} onClose={toggleMenu(false)}>

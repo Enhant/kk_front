@@ -1,5 +1,5 @@
 import Paper from '@mui/material/Paper';
-import { makeStyles } from '@mui/material';
+import { makeStyles } from '@mui/styles';
 
 import theme from '../../../utils/theme';
 

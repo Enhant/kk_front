@@ -7,7 +7,7 @@ import Grid from '@mui/material/Grid';
 import BetPanel from './components/BetPanel';
 import BetsData from './components/BetsData';
 import { initialBetsData } from '../../../utils/constants';
-import { makeStyles } from '@mui/material';
+import { makeStyles } from '@mui/styles';
 
 import theme from '../../../utils/theme';
 

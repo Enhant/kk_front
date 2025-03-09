@@ -2,8 +2,8 @@ import React, { useState } from "react";
 
 import Styles from "./Card.module.css";
 
-const Diamond = require('./images/diamond.png');
-const Mine = require('./images/mine.png');
+import Diamond from './images/diamond.png';
+import Mine from './images/mine.png';
 
 const Card: React.FC<{ onFlipCard: () => Promise<Response> }> = ({ onFlipCard }) => {
   const [flip, setFlip] = useState(false);

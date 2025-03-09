@@ -1,7 +1,8 @@
+// eslint-disable-next-line @typescript-eslint/no-require-imports
+const withImages = require("next-images");
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-  output: "export", // Включает статический экспорт
   basePath: "/kk_frontend", // Укажи имя репозитория
   assetPrefix: "/kk_frontend/",
   images: {
@@ -9,4 +10,4 @@ const nextConfig = {
   },
 };
 
-module.exports = nextConfig;
+module.exports = withImages(nextConfig);

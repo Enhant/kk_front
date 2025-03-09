@@ -1,4 +1,4 @@
-import Grid from '@mui/material/Grid';
+import Grid from '@mui/material/Grid2';
 
 import { makeStyles } from '@mui/styles';
 
@@ -6,6 +6,8 @@ import UnregisterComponent from './LoginComponent/Desktop/UnregisteredVersion';
 import RegisteredComponent from './LoginComponent/Desktop/RegisteredVersion';
 
 import Link from 'next/link';
+
+import header from '../../assets/images/header.svg';
 
 
 interface IProps {
@@ -20,7 +22,7 @@ const HeaderDesktop: React.FC<IProps> = ({ headerOptions, isAuthorized }) => {
         <Grid className={classes.header} component={"header"} container justify="space-between">
             <Grid item container xs={6}>
                 <Grid item xs={2} className={classes.headerContainer}>
-                    <img src={require('../../assets/images/header.svg')} className={classes.headerIcon}/>
+                    <img src={header} className={classes.headerIcon}/>
                 </Grid>
 
                 <Grid container item justify="space-between" xs={8}>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { makeStyles } from '@mui/material';
+import { makeStyles } from '@mui/styles';
 import theme from '../utils/theme';
 
 export const Container = (props: any) => {
