@@ -21,12 +21,13 @@ function Alert(props) {
   return <MuiAlert elevation={6} variant="filled" {...props} />;
 }
 
+// eslint-disable-next-line react/display-name
 const AuthModuleBody = forwardRef(() => {
     const classes = useStyles();
-    const [ email, setEmail ] = useState('');
-    const [ login, setLogin ] = useState('');
-    const [ password, setPassword ] = useState('');
-    const [ repeatPassword, setRepeatPassword ] = useState('');
+    // const [ email, setEmail ] = useState('');
+    // const [ login, setLogin ] = useState('');
+    // const [ password, setPassword ] = useState('');
+    // const [ repeatPassword, setRepeatPassword ] = useState('');
     
     const dispatch = useDispatch();
 
@@ -91,38 +92,38 @@ const AuthModuleBody = forwardRef(() => {
         }
     }, [error])
 
-    const renderRegisterPart = () => {
-        const handleRegister = useCallback((e) => {
-            console.log(e);
-            e.preventDefault();
-            if (!emailRegExp.test(e.target.email.value)) {
-                setAlertMessage('В поле почты не email');
-                // error, warning, info, success
-                setAlertStatus('error');
-                setOpenAlert(true);
-            } else if (
-                e.target.password.value !== e.target.repeatPassword.value
-            ) {
-                setAlertMessage('Пароли не совпадают');
-                // error, warning, info, success
-                setAlertStatus('error');
-                setOpenAlert(true);
-            } else if (!paswordRegExp.test(e.target.password.value)) {
-                console.log(e.target.password.value);
-                setAlertMessage('В пароле как минимум 8 символов, одна буква и один символ');
-                // error, warning, info, success
-                setAlertStatus('error');
-                setOpenAlert(true);
-            } else {
-                console.log('dispatch');
-                dispatch(registerAction(
-                    e.target.email.value,
-                    e.target.login.value,
-                    e.target.password.value,
-                ));
-            }
-        });
+    const handleRegister = useCallback((e) => {
+        console.log(e);
+        e.preventDefault();
+        if (!emailRegExp.test(e.target.email.value)) {
+            setAlertMessage('В поле почты не email');
+            // error, warning, info, success
+            setAlertStatus('error');
+            setOpenAlert(true);
+        } else if (
+            e.target.password.value !== e.target.repeatPassword.value
+        ) {
+            setAlertMessage('Пароли не совпадают');
+            // error, warning, info, success
+            setAlertStatus('error');
+            setOpenAlert(true);
+        } else if (!paswordRegExp.test(e.target.password.value)) {
+            console.log(e.target.password.value);
+            setAlertMessage('В пароле как минимум 8 символов, одна буква и один символ');
+            // error, warning, info, success
+            setAlertStatus('error');
+            setOpenAlert(true);
+        } else {
+            console.log('dispatch');
+            dispatch(registerAction(
+                e.target.email.value,
+                e.target.login.value,
+                e.target.password.value,
+            ));
+        }
+    }, []);
 
+    const renderRegisterPart = () => {
         return (
             <Grid
                 container

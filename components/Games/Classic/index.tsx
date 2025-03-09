@@ -61,6 +61,7 @@ function Classic({ data, makeBet }: IProps) {
     useEffect( () => {
       if (Object.keys(currentGameInfo.players).length > 1) {
         setTimerStart(true);
+        // eslint-disable-next-line @typescript-eslint/no-unused-expressions
         !timerStart && timeToStart > 0 && setTimeout(() => {
           setTimerStart(false);
           dispatch(timerAction(betLevel));

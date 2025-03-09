@@ -1,9 +1,7 @@
 import { Component } from 'react';
 import classes from './Roulette.module.css';
 import Board from './Board/Board';
-import GamerColorAlert from './GamerColorAlert';
 import { connect } from 'react-redux';
-import { selectGameModeData } from 'containers/classic/selectors';
 import { winAction } from 'containers/classic/actions';
 
 

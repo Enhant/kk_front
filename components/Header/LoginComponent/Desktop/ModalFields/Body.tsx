@@ -15,6 +15,7 @@ interface IProps {
     label: string;
 }
 
+// eslint-disable-next-line react/display-name
 const ModalFieldsBody: React.FC<IProps> = React.forwardRef(({label}, _) => {
     const classes = useStyles({});
 

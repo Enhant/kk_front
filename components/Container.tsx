@@ -2,6 +2,7 @@ import React from 'react';
 import { makeStyles } from '@mui/styles';
 import theme from '../utils/theme';
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const Container = (props: any) => {
   const classes = useStyles();
 

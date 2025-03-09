@@ -12,6 +12,7 @@ import { useDispatch } from 'react-redux';
 import { enterMoneyAction } from 'UserProvider/actions';
 
 
+// eslint-disable-next-line react/display-name
 const EnterMoneyModal = forwardRef(() => {
     const classes = useStyles();
     const [ price, setPrice ] = useState('');
